@@ -1,4 +1,4 @@
-package sample;
+package sample.from;
 
 import java.util.Arrays;
 import rx.Observable;

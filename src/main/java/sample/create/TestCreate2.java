@@ -1,4 +1,4 @@
-package sample;
+package sample.create;
 
 import rx.Emitter;
 import rx.Observable;

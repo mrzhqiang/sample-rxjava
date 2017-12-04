@@ -1,4 +1,4 @@
-package sample;
+package sample.create;
 
 import java.security.SecureRandom;
 import rx.Observable;

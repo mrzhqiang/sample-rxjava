@@ -1,4 +1,4 @@
-package sample;
+package sample.from;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;

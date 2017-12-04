@@ -1,10 +1,11 @@
-package sample;
+package sample.create;
 
 import rx.Observable;
 import rx.Subscriber;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
+@Deprecated
 public class TestCreate1 {
   public static void main(String[] args) throws InterruptedException {
     // 1.已过时

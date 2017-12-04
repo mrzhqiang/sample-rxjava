@@ -1,4 +1,4 @@
-package sample;
+package sample.from;
 
 import rx.Observable;
 import rx.Subscriber;
