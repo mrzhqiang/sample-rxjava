@@ -2,15 +2,16 @@ package sample.interval;
 
 import java.util.concurrent.TimeUnit;
 import rx.Observable;
+import rx.schedulers.Schedulers;
 import sample.SimpleSubscriber;
 
-public class TestInterval1 {
+public class TestInterval4 {
   public static void main(String[] args) throws InterruptedException {
     SimpleSubscriber subscriber = SimpleSubscriber.create();
 
-    // 间隔100ms执行一次，默认在计算线程上执行
-    Observable.interval(100, TimeUnit.MILLISECONDS)
+    Observable.interval(1000, 700, TimeUnit.MILLISECONDS, Schedulers.io())
         .subscribe(subscriber);
+
     subscriber.onFinish();
   }
 }

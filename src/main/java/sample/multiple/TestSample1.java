@@ -1,16 +1,18 @@
-package sample.interval;
+package sample.multiple;
 
 import java.util.concurrent.TimeUnit;
 import rx.Observable;
 import sample.SimpleSubscriber;
 
-public class TestInterval1 {
+public class TestSample1 {
   public static void main(String[] args) throws InterruptedException {
     SimpleSubscriber subscriber = SimpleSubscriber.create();
 
-    // 间隔100ms执行一次，默认在计算线程上执行
-    Observable.interval(100, TimeUnit.MILLISECONDS)
+    Observable.interval(10, TimeUnit.MILLISECONDS)
+        // 按照时间间隔去采样
+        .sample(500, TimeUnit.MILLISECONDS)
         .subscribe(subscriber);
+
     subscriber.onFinish();
   }
 }
